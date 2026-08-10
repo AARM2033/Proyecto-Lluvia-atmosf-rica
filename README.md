@@ -22,23 +22,33 @@ docker pull aarm2034/andres-rivera:latest
 
 Para que Geant4 pueda abrir las ventanas de visualización (Qt/OpenGL) desde adentro del contenedor, debes permitir que Docker se conecte al servidor de pantalla de tu máquina local:
 
+```bash
 xhost +local:docker
+```
 
 ### **3. Ejecutar el contenedor**
 
 Inicia un contenedor:
 
+```bash
 docker run -it --env="LIBGL_ALWAYS_SOFTWARE=1"  --name my_project   --net=host   --env="DISPLAY" --device /dev/dri  -v $HOME/.Xauthority:/root/.Xauthority:rw   -v ${HOME}/geant4-project:/geant4lab  aarm2034/andres-rivera:latest
+```
 
 Una vez dento del contenedor entra hasta la carpeta:
 
+```bash
 cd /geant4lab/proyecto_lluvias_cosmicas/build
+```
 
 Compila el proyecto:
 
+```bash
 cmake ..
 make
+```
 
 Y ejecútalo:
 
+```bash
 ./sim
+```
