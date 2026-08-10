@@ -26,7 +26,7 @@ Para que Geant4 pueda abrir las ventanas de visualización (Qt/OpenGL) desde ade
 xhost +local:docker
 ```
 
-### **3. Ejecutar el contenedor**
+### **2. Ejecutar el contenedor**
 
 Inicia un contenedor:
 
