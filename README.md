@@ -19,6 +19,7 @@ La imagen ya contiene el entorno de Geant4 compilado y el código fuente del pro
 ```bash
 docker pull aarm2034/andres-rivera:latest
 
+
 Para que Geant4 pueda abrir las ventanas de visualización (Qt/OpenGL) desde adentro del contenedor, debes permitir que Docker se conecte al servidor de pantalla de tu máquina local:
 
 xhost +local:docker
