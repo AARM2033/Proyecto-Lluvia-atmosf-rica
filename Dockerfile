@@ -34,12 +34,12 @@ RUN wget https://gitlab.cern.ch/geant4/geant4/-/archive/v${G4_VERSION}/geant4-v$
     && make install \
     && rm -rf /tmp/*
 
-# 3. Requisito PDF: Crear la carpeta /geant4lab
+# 3. Crear la carpeta /geant4lab
 RUN mkdir -p /geant4lab/proyecto_lluvias_cosmicas
 
 COPY geant4lab/ /geant4lab/
 
-# 4. Requisito PDF: Crear el script geant4make.sh global
+# 4. Crear el script geant4make.sh global
 RUN echo '#!/bin/bash\nsource /opt/geant4/bin/geant4.sh' > /usr/local/bin/geant4make.sh \
     && chmod +x /usr/local/bin/geant4make.sh
 
