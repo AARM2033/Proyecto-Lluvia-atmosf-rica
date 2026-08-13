@@ -4,10 +4,7 @@ Este repositorio contiene el código fuente y la configuración necesaria para e
 
 ## Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalados los siguientes componentes en tu sistema (preferiblemente un entorno Linux/Ubuntu):
-
-* [Docker](https://docs.docker.com/get-docker/)
-* Servidor X11 (incluido por defecto en distribuciones de escritorio Linux)
+Antes de comenzar, asegúrate de tener instalado docker en tu sistema (preferiblemente un entorno Linux/Ubuntu):
 
 
 ##  Instalación y Despliegue
