@@ -28,7 +28,7 @@ xhost +local:docker
 Inicia un contenedor:
 
 ```bash
-docker run -it aarm2034/andres-rivera:latest
+docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aarm2034/andres-rivera:latest bash
 ```
 
 Una vez dento del contenedor entra hasta la carpeta:
@@ -37,7 +37,24 @@ Una vez dento del contenedor entra hasta la carpeta:
 cd /geant4lab/proyecto_lluvias_cosmicas/build
 ```
 
-Compila el proyecto:
+En esta imagen se tienen archivos de compilación, se puede ejecutar directamente
+```bash
+./sim
+```
+
+O eliminar su contenido con el comando
+```bash
+rm -rf *
+```
+
+Con esto ultimo se debe crear de nuevo el archivo vis.mac
+```bash
+nano vis.mac
+```
+
+Y copia su contenido que está colocado en este repositorio de github
+
+Luego, compila el proyecto:
 
 ```bash
 cmake ..
