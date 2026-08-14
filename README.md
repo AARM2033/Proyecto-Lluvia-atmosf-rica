@@ -28,7 +28,7 @@ xhost +local:docker
 Inicia un contenedor:
 
 ```bash
-docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aarm2034/andres-rivera:latest bash
+docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aarm2034/andres-rivera:latest bash
 ```
 
 Una vez dento del contenedor entra hasta la carpeta:
