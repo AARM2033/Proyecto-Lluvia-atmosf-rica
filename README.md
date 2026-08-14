@@ -28,7 +28,7 @@ xhost +local:docker
 Inicia un contenedor:
 
 ```bash
-docker run -it --env="LIBGL_ALWAYS_SOFTWARE=1"  --name my_project   --net=host   --env="DISPLAY" --device /dev/dri  -v $HOME/.Xauthority:/root/.Xauthority:rw   -v ${HOME}/geant4-project:/geant4lab  aarm2034/andres-rivera:latest
+docker run -it aarm2034/andres-rivera:latest
 ```
 
 Una vez dento del contenedor entra hasta la carpeta:
