@@ -4,5 +4,5 @@
 /vis/modeling/trajectories/create/drawByCharge
 
 /run/initialize
-/run/beamOn 2
+/run/beamOn 1
 /vis/viewer/flush
