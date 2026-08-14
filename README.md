@@ -14,7 +14,7 @@ Antes de comenzar, asegúrate de tener instalado docker en tu sistema (preferibl
 La imagen ya contiene el entorno de Geant4 compilado y el código fuente del proyecto integrado. Descárgala desde Docker Hub con el siguiente comando:
 
 ```bash
-docker pull aarm2034/andres-rivera:latest
+docker pull aarm2034/andres-rivera
 ```
 
 Para que Geant4 pueda abrir las ventanas de visualización (Qt/OpenGL) desde adentro del contenedor, debes permitir que Docker se conecte al servidor de pantalla de tu máquina local:
